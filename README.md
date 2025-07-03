@@ -16,3 +16,12 @@ Respositories:
 This repository aims to at least index, similar to the NSQHS PROMS list, assessments and questionaries used in an Australian clinical setting; an indicator of licencing, a *doi* or other stable URL.
 
 A secondary goal would be to host community driven forms, with a quality indicator.
+
+## Contributing
+
+Assessments index
+
+* Open a pull request with the assessment name (short code), description
+* Ensure a citation is available - tip, use Pubmed to rapidly generate
+* Where possible, include a DOI URL - this is the primary machine readable reference
+
