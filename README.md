@@ -25,3 +25,11 @@ Assessments index
 * Ensure a citation is available - tip, use Pubmed to rapidly generate
 * Where possible, include a DOI URL - this is the primary machine readable reference
 
+Assessments
+
+* Indicate FHIR version
+* Use https://validator.fhir.org/
+* Use https://smartforms.csiro.au/playground and detail your manual testing
+* Ensure you include licencing indicators.
+* If generative tools used, validate the source assessments are **public domain** or a similarly open licenced publication (ie: CC-0)
+* Include citations
