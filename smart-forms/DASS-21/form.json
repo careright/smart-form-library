@@ -1196,7 +1196,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "item.where(linkId.startsWith('d')).answer.value.toInteger().sum() * 2"
+            "expression": "item.where(linkId.startsWith('d')).item.answer.value.extension.valueDecimal.sum()"
           }
         }
       ]
@@ -1210,7 +1210,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "item.where(linkId.startsWith('a')).answer.value.toInteger().sum() * 2"
+            "expression": "item.where(linkId.startsWith('a')).item.answer.value.extension.valueDecimal.sum()"
           }
         }
       ]
@@ -1224,7 +1224,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "item.where(linkId.startsWith('s')).answer.value.toInteger().sum() * 2"
+            "expression": "item.where(linkId.startsWith('s')).item.answer.value.extension.valueDecimal.sum()"
           }
         }
       ]
@@ -1238,7 +1238,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(item.where(linkId.startsWith('d')).answer.value.toInteger().sum() + item.where(linkId.startsWith('a')).answer.value.toInteger().sum() + item.where(linkId.startsWith('s')).answer.value.toInteger().sum()) * 2"
+            "expression": "item.where(linkId.startsWith('d')).item.answer.value.extension.valueDecimal.sum() + item.where(linkId.startsWith('a')).item.answer.value.extension.valueDecimal.sum() + item.where(linkId.startsWith('s')).item.answer.value.extension.valueDecimal.sum()"
           }
         }
       ]
